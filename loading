@@ -1,7 +1,4 @@
-      {user?.loading ? (
-        <Loading />
-      ) : (
-        user?.issuer && (
+      {user?.loading ? (<Loading/>) : (user?.issuer && (
           <>
           <VStack>
             <div>Email</div>
@@ -10,11 +7,7 @@
             <div>{user.issuer}</div>
             </VStack>
           </>
-        )
-
-      )
-      
-      }
+        ))}
       
       
       Saving this implementation, worked well with context (user?) magic link auth api
