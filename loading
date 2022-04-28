@@ -1,0 +1,26 @@
+      {user?.loading ? (
+        <Loading />
+      ) : (
+        user?.issuer && (
+          <>
+          <VStack>
+            <div>Email</div>
+            <div className='profile-info'>{user.email}</div>
+            <div>User Id</div>
+            <div>{user.issuer}</div>
+            </VStack>
+          </>
+        )
+
+      )
+      
+      }
+      
+      
+      Saving this implementation, worked well with context (user?) magic link auth api
+      
+      going to check if it works without context (loading is callback of magic here?)
+      
+      will post results later and reuse, very handy way of rendering conditional loading components
+      
+      even if custom loading state is needed
